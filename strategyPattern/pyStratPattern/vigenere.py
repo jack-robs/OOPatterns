@@ -1,8 +1,8 @@
-# class for caesar cipher 
-class Caesar: 
+# class for vignere cipher
+class Vig: 
     
     def __init__(self):
-        self.name = "caesar cipher"
+        self.name = "vigenere cipher"
 
 
     def encrypt(self, messageClass):
@@ -11,12 +11,9 @@ class Caesar:
         Called in message.py in encrypt()
         returns: string (for now, just to confirm method access)
         '''
-        #TODO actual encryption logic
-        return "Caesar encrypting: " + messageClass.getMessage()
+        return "Vig encrypting: " + messageClass.getMessage()
         
 
     def toString(self):
         return 'Using Strategy: ' + self.name
-
-    
 

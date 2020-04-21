@@ -1,5 +1,6 @@
 from caesar import *
 from message import *
+from vigenere import *
 
 '''
 Project: strategy pattern impelemented in python
@@ -25,7 +26,10 @@ def main():
         print("Chose caesar cipher")
         strat = Caesar()
         message = Message(userText, strat)
-        print(message.getStrat())
+        strat = message.getStrat()
+        cipher = message.encrypt()
+        print(strat)
+        print(cipher)
 
     elif cipherType == 2:
         print("Chose vig cipher")
